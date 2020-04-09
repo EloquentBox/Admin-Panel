@@ -25,7 +25,7 @@ a:link, a:visited {
   border-radius: 50%;
 }
 
-.ekona {
+.headIcon {
   color: gray;
 }
 
@@ -43,11 +43,7 @@ img {
   height: 60px;
   align-items: center;
 }
-p {
-  padding: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
+
 
 .center {
   display: block;

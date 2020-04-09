@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { MaterialModule } from './material/material.module';
-import {RouterModule} from '@angular/router';
 import {SharedModule} from './shared/shared.module';
+import {AppRoutingModule} from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,9 +14,9 @@ import {SharedModule} from './shared/shared.module';
     BrowserModule,
     BrowserAnimationsModule,
     NoopAnimationsModule,
-    RouterModule,
     MaterialModule,
-    SharedModule
+    SharedModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
