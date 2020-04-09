@@ -1,0 +1,99 @@
+<mat-toolbar color="grey">
+  <mat-toolbar-row>
+    <div fxFlex fxLayout="row" fxLayoutAlign="flex-end">
+      <ul fxLayout="row" fxLayoutGap="20px">
+        <li>
+          <button mat-icon-button class="ikona" [matMenuTriggerFor]="messages" matBadge="3" matBadgePosition="after" matBadgeColor="primary" matBadgeSize="small">
+            <mat-icon class="ekona">mail</mat-icon>
+          </button>
+          <mat-menu #messages="matMenu">
+            <p>Messages</p>
+            <hr>
+            <button mat-menu-item>
+              <img src="" alt=""> Lorem Ipsum
+            </button>
+            <button mat-menu-item>
+              <img src="" alt=""> Lorem Ipsum
+            </button>
+            <button mat-menu-item>
+              <img src="" alt=""> Lorem Ipsum
+            </button>
+            <hr>
+            <button mat-menu-item>
+              <p class="messageText">Check all messages</p>
+            </button>
+          </mat-menu>
+        </li>
+        <li>
+          <button mat-icon-button class="ikona" [matMenuTriggerFor]="notifications" matBadge="3" matBadgePosition="after" matBadgeColor="accent" matBadgeSize="small">
+            <mat-icon class="ekona">notifications</mat-icon>
+          </button>
+          <mat-menu #notifications="matMenu" class="headerButton">
+            <p>Notifications</p>
+            <hr>
+            <button mat-menu-item class="notificationBox">
+              <img src="https://www.freeiconspng.com/minicovers/true-nature-event-tornado-picture-17.png" alt="" align="left" class="center">
+              <p><b>Naglowek</b></p>
+              <p>Lorem Ipsum costam costam</p>
+            </button>
+            <button mat-menu-item class="notificationBox">
+              <img src="https://www.freeiconspng.com/minicovers/true-nature-event-tornado-picture-17.png" alt="" align="left">
+              <p><b>Naglowek</b></p>
+              <p>Lorem Ipsum costam costam</p>
+            </button>
+            <button mat-menu-item class="notificationBox">
+              <img src="https://www.freeiconspng.com/minicovers/true-nature-event-tornado-picture-17.png" alt="" align="left">
+              <p><b>Naglowek</b></p>
+              <p>Lorem Ipsum costam costam</p>
+            </button>
+            <hr>
+            <button mat-menu-item>
+              <p class="messageText">Check all messages</p>
+            </button>
+          </mat-menu>
+        </li>
+
+        <li>
+          <button mat-button [matMenuTriggerFor]="menu" class="headerButton">
+            <img class="logo" src="https://www.smarttune.co.uk/shopimages/products/normal/wheel%20bolt%20covers%20453.jpg" alt="">
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              Your name and surname
+              <mat-icon>notifications_none</mat-icon>
+            </button>
+            <hr>
+            <button mat-menu-item>
+              <a mat-list-item routerLinkActive="list-item-active" routerLink="/yourprofile"><mat-icon>perm_identity</mat-icon>Your Profile</a>
+            </button>
+            <button mat-menu-item>
+              <mat-icon>calendar_today</mat-icon>
+              My Calendar
+            </button>
+            <button mat-menu-item>
+              <mat-icon>format_list_bulleted</mat-icon>
+              My Tasks
+            </button>
+            <button mat-menu-item>
+              <a mat-list-item routerLinkActive="list-item-active" routerLink="/inbox"><mat-icon>drafts</mat-icon>My Inbox</a>
+            </button>
+            <hr>
+            <button mat-menu-item>
+              <mat-icon>vpn_key</mat-icon>
+              My Tasks
+            </button>
+            <button mat-menu-item>
+              <mat-icon>reply</mat-icon>
+              Log Out
+            </button>
+          </mat-menu>
+        </li>
+      </ul>
+    </div>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+
+
+
+
